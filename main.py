@@ -22,7 +22,7 @@ def main():
             cat_box = detector.detect(frame)
             if cat_box:
                 for box in cat_box:
-                    class_name = classify_cat(frame, box)
+                    class_name = classifier.classify(frame)
                     if class_name is not None:
                         label = f"Cat: {class_name}"
                         utils.draw_info(frame, box, label)
