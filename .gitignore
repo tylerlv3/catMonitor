@@ -9,3 +9,6 @@ __pycache__/
 *.pyzw
 *.pyzwz
 .env
+/dataset/
+/yolo_weights/
+yolov8n.pt

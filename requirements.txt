@@ -2,3 +2,5 @@ opencv-python
 python-dotenv
 mss
 ultralytics
+torch
+torchvision
