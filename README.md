@@ -35,7 +35,7 @@ This project was developed to use computer vision to monitor cats in real time. 
     ```pip install -r requirements.txt```
 
 4. **Download YOLO weights:**
-    The `detector.py` script will attempt to use download the YOLOv8n weights upon first run.
+    The `detector.py` script will attempt to download the YOLOv8n weights upon first run.
 
 ## Usage
 
