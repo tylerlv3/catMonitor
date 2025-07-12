@@ -1,16 +1,16 @@
-#Smart Cat Monitor
+# Smart Cat Monitor
 
-I developed this project to use computer vision to monitor cats in real time. In addition to just monitoring them, it is able to classify cat behaviors. I have built out whole pipeline for data collection, model training, evaluation, and live deployment.
+This project was developed to use computer vision to monitor cats in real time. In addition to just monitoring them, it is able to classify cat behaviors. It boasts a built out pipeline for data collection, model training, evaluation, and live deployment.
 
 # Features
-- **Real-Time Cat Detection:** Utilized YOLOv8n to to detect cats from a given video stream.
-- **Activity Classification:** Using a finely tuned MobileNetV3 model to classify a cats activity to one of four categories: eating, sleeping, playing, or idle.
+- **Real-Time Cat Detection:** Utilized YOLOv8n to detect cats from a given video stream.
+- **Activity Classification:** Using a finely tuned MobileNetV3 model to classify a cat's activity to one of four categories: eating, sleeping, playing, or idle.
 - **Flexible Modes:**
     - **Live Classification Mode:** Runs the detector and classifier in real time to detect cats on the feed, and classify them to one of the activities.
     - **Data Labeling Mode:** Runs a global hot key system and the detector to allow you to easily and quickly capture and label new entries into the dataset. The hot keys work even when the detector window is not in focus making it easier to label.
 - **Complete Pipeline**
     - **`train.py`:** A thorough script to train the MobileNet model for activity classification using transfer learning and a two phase fine tuning approach.
-    - **`evaluate.py`:** Generates a confusion matrix to gain insight to where the model is succeding, and failing. This helps to analyze performance, and aid in finding areas needing corrections.
+    - **`evaluate.py`:** Generates a confusion matrix to gain insight into where the model is succeeding, and failing. This helps to analyze performance, and aid in identifying areas needing improvement.
     - **`review.py`:** An interactive tool to quickly and efficiently clean up datasets. This helped in reducing ambiguity and increasing model accuracy.
 
 ## Technology Stack
@@ -32,10 +32,10 @@ I developed this project to use computer vision to monitor cats in real time. In
     ```source venv/bin/activate```
 
 3. **Install Requirements:**
-    ```pip install -r reqiurements.txt```
+    ```pip install -r requirements.txt```
 
 4. **Download YOLO weights:**
-    The `detector.py` script will attempt to use `yolov8n.pt`. Ensure this file is present in the root directory.
+    The `detector.py` script will attempt to use download the YOLOv8n weights upon first run.
 
 ## Usage
 
@@ -58,7 +58,7 @@ First, you must collect some high quality data for the respective categories.
 
 ### 2. Model Training (`train.py`)
 
-Once you have aquired some good data, you can move onto training the model.
+Once you have acquired some good data, you can move onto training the model.
 
 -   Run the training script:
     ```python train.py```
@@ -78,7 +78,7 @@ Use the newly trained model to classify cat behavior in real time!
 
 1. In `main.py`, set `MANUAL_CLASSIFICATION = False`.
 2. Run the script `main.py`, ```python main.py```
-3. The application will open in a window similar to the manual classification one, but instead it will now be labeling activites in real time from the feed with a bounding box around each labeled object.
+3. The application will open in a window similar to the manual classification one, but instead it will now draw bounding boxes around detected cats in real-time with a label of the predicted activity.
 4. Press `q` to quit.
 
 
