@@ -81,4 +81,8 @@ Use the newly trained model to classify cat behavior in real time!
 3. The application will open in a window similar to the manual classification one, but instead it will now draw bounding boxes around detected cats in real-time with a label of the predicted activity.
 4. Press `q` to quit.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
