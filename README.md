@@ -74,7 +74,7 @@ This will analyze the performance of the newly trained model.
 
 Here is an example of a generated confusion matrix:
 
-![Confusion Matrix](assets/confusion_matrix.png)
+<img src="assets/confusion_matrix.png" alt="Confusion Matrix" width="500">
 
 ### 4. Live Classification (`main.py')
 
