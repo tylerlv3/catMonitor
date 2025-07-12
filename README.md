@@ -72,6 +72,10 @@ This will analyze the performance of the newly trained model.
     ```python evaluate.py```
 -   This will generate a png of a `confusion_matrix.png' and print a detailed classification report to console.
 
+Here is an example of a generated confusion matrix:
+
+![Confusion Matrix](assets/confusion_matrix.png)
+
 ### 4. Live Classification (`main.py')
 
 Use the newly trained model to classify cat behavior in real time!
