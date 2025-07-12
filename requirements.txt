@@ -4,3 +4,7 @@ mss
 ultralytics
 torch
 torchvision
+scikit-learn
+matplotlib
+seaborn
+pynput
